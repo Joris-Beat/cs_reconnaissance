@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulaire d'inscription au Complexe Scolaire La Reconnaissance">
+    <title>Inscription - La Reconnaissance</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/pages/inscription.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../assets/Images/istockphoto-1358014313-612x612.jpg" alt="Logo Complexe Scolaire La Reconnaissance">
+      </div>
+      <nav class="navigateur">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="./programmes.html">Programmes</a></li>
+          <li><a href="./enseignants.html">Enseignants</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./apropos.html">À propos</a></li>
+        </ul>
+      </nav>
+      <div class="recherche">
+        <form role="search">
+          <input type="text" placeholder="Recherche" aria-label="Rechercher">
+          <button type="submit">Recherche</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="inscription-container">
+        <h1>Formulaire d'inscription</h1>
+        <form class="inscription-form" method="post" action="#">
+          <div class="form-group">
+            <label for="nom-eleve">Nom</label>
+            <input type="text" id="nom-eleve" name="nom-eleve" required>
+          </div>
+
+          <div class="form-group">
+            <label for="nom-eleve">Post-nom</label>
+            <input type="text" id="nom-eleve" name="nom-eleve" required>
+          </div>
+
+          <div class="form-group">
+            <label for="nom-eleve">Prénom</label>
+            <input type="text" id="nom-eleve" name="nom-eleve" required>
+          </div>
+
+          <div class="form-group">
+            <label for="sexe">Sexe</label>
+            <select id="sexe" name="sexe" required>
+              <option value="">-- Sélectionnez --</option>
+              <option value="masculin">Masculin</option>
+              <option value="feminin">Féminin</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date-naissance">Date de naissance</label>
+            <input type="date" id="date-naissance" name="date-naissance" required>
+          </div>
+
+          <div class="form-group">
+            <label for="nom-parent">Nom du parent / tuteur</label>
+            <input type="text" id="nom-parent" name="nom-parent" required>
+          </div>
+
+          <div class="form-group">
+            <label for="telephone">Téléphone du parent</label>
+            <input type="tel" id="telephone" name="telephone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="classe">Classe souhaitée</label>
+            <select id="classe" name="classe" required>
+              <option value="">-- Sélectionnez --</option>
+              <option value="1ere">1ère Année</option>
+              <option value="2eme">2ème Année</option>
+              <option value="3eme">3ème Année</option>
+              <option value="4eme">4ème Année</option>
+              <option value="5eme">5ème Année</option>
+              <option value="6eme">6ème Année</option>
+            </select>
+          </div>
+
+          <button type="submit">S'inscrire</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="lien-pages">
+        <a href="../index.html">Accueil</a>
+        <a href="./programmes.html">Programmes</a>
+        <a href="./enseignants.html">Enseignants</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./apropos.html">À propos</a>
+        <a href="./blog.html">Blog</a>
+      </div>
+      <div class="copyright">
+        © 2025 Complexe Scolaire La Reconnaissance. Tous droits réservés.
+      </div>
+    </footer>
+  </body>
+
+</html>

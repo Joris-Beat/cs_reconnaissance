@@ -1,0 +1,97 @@
+.banner-container {
+    background-image: url(../Images/ecole.jpg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 6rem 1rem;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.banner-slogan {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner-slogan h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.banner-slogan p {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .banner-slogan h1 {
+        font-size: 2rem;
+    }
+    
+    .banner-slogan p {
+        font-size: 1.1rem;
+    }
+}
+
+/* ==========================================================================
+   PAGE PROGRAMMES
+   ========================================================================== */
+
+.programmes-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.programmes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.programme {
+    background: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.programme::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.programme:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.programme h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.programme p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}

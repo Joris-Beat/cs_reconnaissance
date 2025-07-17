@@ -1,0 +1,86 @@
+.enseignants-container {
+    max-width: 12000px;
+    margin: 0 auto;
+    padding: 10px 80px;
+  
+     
+}
+
+.titre {
+    text-align: center;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #5e0404;
+}
+.titre h1 {
+    color: #2c3e50;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px #1eff00;
+}
+.titre p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.enseignants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+    
+
+}
+
+.enseignant {
+    background-color: rgb(174, 178, 179);
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.9s ease;
+    position: relative;
+    overflow: hidden;
+    width: 280px;
+  
+}
+
+.enseignant::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.enseignant:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.enseignant img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 4px solid #ffffff;
+    
+}
+
+.enseignant h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+   
+}
+
+.enseignant p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    font-style: italic;
+}
